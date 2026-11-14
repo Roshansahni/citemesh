@@ -1,0 +1,31 @@
+provider: ollama            # ollama | groq | gemini  (env LLM_PROVIDER overrides)
+
+ollama:
+  host: "http://localhost:11434"
+  chat_model: "llama3.2:3b"        # VERIFY at https://ollama.com/library ; alternatives: qwen3:4b, phi4-mini
+  embed_model: "nomic-embed-text"  # VERIFY at https://ollama.com/library/nomic-embed-text
+groq:
+  model: "llama-3.1-8b-instant"    # VERIFY at https://console.groq.com/docs/models
+gemini:
+  model: "gemini-2.5-flash"        # VERIFY at https://ai.google.dev/gemini-api/docs/models
+
+llm:
+  temperature: 0.2
+  num_ctx: 4096          # context window requested from Ollama (keep small on 8GB RAM)
+  timeout: 300           # seconds per call (small local models can be slow)
+  retries: 3
+
+research:
+  sources: [web, arxiv, wikipedia]
+  max_subquestions: 3
+  results_per_source: 3  # results per tool per sub-question
+  max_sources: 8
+  max_iterations: 2      # writer<->critic revision loop bound
+  chunk_size: 900
+  top_chunks: 3
+  max_page_chars: 20000
+  use_embeddings: true   # false = keyword retrieval only (no embed model needed)
+  llm_critic: true       # extra LLM fact-check pass (rule checks always run)
+  local_pdf_dir: data/pdfs
+  cache_file: cache.sqlite
+  output_dir: outputs
