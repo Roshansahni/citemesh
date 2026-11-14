@@ -9,3 +9,4 @@ outputs/*
 !outputs/.gitkeep
 data/pdfs/*
 !data/pdfs/.gitkeep
+.streamlit/secrets.toml
