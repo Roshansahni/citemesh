@@ -1,0 +1,22 @@
+[
+{"id":"q01","category":"mechanism","question":"How do retrieval-augmented LLMs reduce hallucinations?","expect_refusal":false},
+{"id":"q02","category":"mechanism","question":"What is the transformer architecture and why did it replace RNNs for language modelling?","expect_refusal":false},
+{"id":"q03","category":"mechanism","question":"How does LoRA fine-tune large language models cheaply?","expect_refusal":false},
+{"id":"q04","category":"comparison","question":"What is the difference between supervised fine-tuning and reinforcement learning from human feedback?","expect_refusal":false},
+{"id":"q05","category":"comparison","question":"How do vision transformers differ from convolutional neural networks?","expect_refusal":false},
+{"id":"q06","category":"definition","question":"What are the main causes of overfitting and how is it mitigated?","expect_refusal":false},
+{"id":"q07","category":"mechanism","question":"How does attention cost scale with sequence length and what methods reduce it?","expect_refusal":false},
+{"id":"q08","category":"tradeoff","question":"What is neural network quantization and what are its trade-offs?","expect_refusal":false},
+{"id":"q09","category":"mechanism","question":"How do diffusion models generate images?","expect_refusal":false},
+{"id":"q10","category":"definition","question":"What are mixture-of-experts language models and what problem do they address?","expect_refusal":false},
+{"id":"q11","category":"tradeoff","question":"How are large language models evaluated and what are the limits of benchmarks?","expect_refusal":false},
+{"id":"q12","category":"security","question":"What is prompt injection and how can LLM applications defend against it?","expect_refusal":false},
+{"id":"q13","category":"definition","question":"How do graph neural networks work and where are they used?","expect_refusal":false},
+{"id":"q14","category":"tradeoff","question":"What is federated learning and what privacy benefits does it offer?","expect_refusal":false},
+{"id":"q15","category":"definition","question":"What is chain-of-thought prompting and when does it help?","expect_refusal":false},
+{"id":"q16","category":"definition","question":"What is knowledge distillation and why is it used?","expect_refusal":false},
+{"id":"q17","category":"mechanism","question":"How do embeddings and vector databases support semantic search?","expect_refusal":false},
+{"id":"q18","category":"definition","question":"What are the main approaches to AI model interpretability?","expect_refusal":false},
+{"id":"q19","category":"unanswerable","question":"What were the key results of the 2031 ICML best paper award winner?","expect_refusal":true},
+{"id":"q20","category":"unanswerable","question":"What is the capital city of Atlantis according to recent peer-reviewed research?","expect_refusal":true}
+]
